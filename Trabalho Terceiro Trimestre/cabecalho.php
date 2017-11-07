@@ -1,6 +1,8 @@
 <!DOCTYPE html>
 <html>
 <head>
+	<script type="text/javascript" src="js/jquery.js"></script>
+	<script type="text/javascript" src="js/script.js"></script>
 	<link rel="stylesheet" type="text/css" href="css/completo.css">
 	<link rel="stylesheet" type="text/css" href="css/geral.css">
 	<link rel="stylesheet" type="text/css" href="css/profs.css">
@@ -19,7 +21,7 @@
 	<nav class="menu">
 		<a href=""><section class="item menu">Próximas tarefas</section></a>
 		<a href=""><section class="item menu">Todas Tarefas</section></a>
-		<a href=""><section class="item menu">Tarefas por disciplina</section></a>
+		<a href="listadisciplinas.php"><section class="item menu">Tarefas por disciplina</section></a>
 		<a href=""><section class="item menu">Tarefas por data</section></a>
 		<a href="listaprofessores.php"><section class="item menu ativo">Professores</section></a>
 		<a href="listaalunos.php"><section class="item menu">Colegas</section></a>
