@@ -3,11 +3,11 @@
 	include 'disciplinas.php';
 
 	for ($i=1; $i <4 ; $i++) { 
-		$ofertas=listaOfertas('2017','1info'.$i);
+		$ofertas=listaOfertas('2017','1info'.$i,'nome_disciplina');
 			echo "<section class='lista'>
 			<h2>1info".$i."</h2><ul>";
 			foreach ($ofertas as $linha) {
-				echo"<li>".$linha['cod_disciplina']."</li>";
+				echo"<li>".$linha['cod_disciplina']." - ".$linha['nome_disciplina']." - ".$linha['cod_professor']."</li>";
 			}
 			echo "</ul></section>";
 		

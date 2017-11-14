@@ -1,3 +1,6 @@
+<?php
+	session_start();
+?>
 <!DOCTYPE html>
 <html>
 <head>
@@ -12,8 +15,28 @@
 <body>
 	<!-- cabeçalho -->
 	<header>
-		<img src="imagens/logo.png" id="logo"/>
+		<a href="index.php"><img src="imagens/logo.png" id="logo"/></a>
 		<h1 id="nome_site">Agenda de tarefas</h1>
+
+ <?php
+ if (!isset($_SESSION['login'])) {
+ 		echo "<div id='login'>
+ 				<form method='post' action='login.php'>
+					<label for='login' class='login_labels'>Login:</label>
+					<input type='text' name='login' class='login_inputs'>
+
+					<label for='senha' class='login_labels'>Senha:</label>
+					<input type='password' name='senha' class='login_inputs'>
+
+					<input type='submit' name='enviar' id='submit' value='Entrar'>
+				</form>
+			</div>";
+
+ 		}else{
+			echo "<h2>Olá ".$_SESSION['nome']."</h2>";
+			echo "<a href='logout.php'><p>Desconectar</p></a>";
+		}
+?>
 	</header>
 	<div class='divider'></div>
 	<!-- menu -->

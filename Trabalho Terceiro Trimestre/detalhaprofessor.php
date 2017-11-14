@@ -11,13 +11,19 @@
 ?>
 	<div class="coluna10">.</div>
 	<article class="coluna80">
-		<section class="foto">
-			<img src="<?=$professor['foto']?>">
+		<section class="clicavel" id="img">
+			<img src=<?=$professor['foto']?>>
 		</section>
+
+		<div class="modal img escondido">
+			<div class="fechar">X</div>
+			<img src=<?=$professor['foto']?>>
+		</div>
 
 		<section class="dados">
 			<p>Nome: <?=$professor['nome']?></p>
 			<p>Email: <?=$professor['email']?></p>
+			<p>Matéria: <?=$professor['materia']?></p>
 		</section>
 	</article>
 

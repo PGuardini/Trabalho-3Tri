@@ -11,13 +11,18 @@
 ?>
 	<div class="coluna10">.</div>
 	<article class="coluna80">
-		<section class="foto">
+		<section class="clicavel" id="img">
 			<img src=<?=$aluno['foto']?>>
 		</section>
+	
+		<div class="modal img escondido">
+			<div class="fechar">X</div>
+			<img src=<?=$aluno['foto']?>>
+		</div>
 
 		<section class="dados">
 			<p>Nome: <?=$aluno['nome']?></p>
-			<p>Nome: <?=$aluno['turma']?></p>
+			<p>Turma: <?=$aluno['turma']?></p>
 			<p>Email: <?=$aluno['email']?></p>
 		</section>
 	</article>
@@ -25,3 +30,5 @@
 <?php
 
 	include 'rodape.php';
+
+?>

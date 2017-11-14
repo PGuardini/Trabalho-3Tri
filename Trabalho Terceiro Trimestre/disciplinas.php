@@ -39,6 +39,7 @@
 				$oferta['turma']=$colunas[1];
 				$oferta['cod_disciplina']=$colunas[2];
 				$oferta['cod_professor']=$colunas[3];
+				$oferta['nome_disciplina']=$colunas[4];
 				$ofertas[]=$oferta;
 			}
 		}

@@ -13,6 +13,7 @@
 				$professor['nome']=$colunas[1];
 				$professor['email']=$colunas[2];
 				$professor['foto']=$colunas[3];
+				$professor['materia']=$colunas[4];
 			}
 		}
 
@@ -35,6 +36,7 @@
 				$professor['nome']=$colunas[1];
 				$professor['email']=$colunas[2];
 				$professor['foto']=$colunas[3];
+				$professor['materia']=$colunas[4];
 
 				$professores[] = $professor;	
 			}
