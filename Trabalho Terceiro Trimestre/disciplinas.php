@@ -9,7 +9,7 @@
 				$disciplina['nome']=$colunas[1];
 
 				$disciplinas[]=$disciplina;
-			}			
+			}
 		}
 		return $disciplinas;
 	}
@@ -26,9 +26,9 @@
 				$disciplina['nome']=$colunas[1];
 			}
 		}
+		return $disciplina;
 	}
 
- 
 	function listaOfertas($ano, $turma){
 		$ofertas= array();
 		$dados=file("dados/ofertas.csv");

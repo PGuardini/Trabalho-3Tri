@@ -16,7 +16,7 @@
 	if (isset($_SESSION['login']) and $_SESSION['login']=='admin') {
 		echo "<a href='formProfessor.php'><p>Novo Professor</p></a><br/>";
 	}
-
+	echo "<h2>Professores:</h2>";
 	foreach ($lista as $professor) {
 		echo '<li><a href="detalhaprofessor.php?cod='.$professor['siape'].'">'.$professor["nome"].'</a> -'.$professor["email"].'</li>';
 	}

@@ -1,7 +1,7 @@
 body{
 	font-family: Verdana, Arial, sans-serif;
-	font-size: 15px; 
-	background-color: #fbfbfb; 
+	font-size: 15px;
+	background-color: #fbfbfb;
 }
 
 img{
@@ -16,7 +16,7 @@ img{
 }
 
 #nome_site{
-	margin-top: 2%;	
+	margin-top: 2%;
 	width: 85%;
 	float: left;
 }
@@ -29,7 +29,7 @@ img{
 /*menu*/
 .menu{
 	width: 100%;
-	margin-bottom: 30px;	
+	margin-bottom: 30px;
 }
 
 .item.menu{

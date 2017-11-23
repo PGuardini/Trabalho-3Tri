@@ -1,29 +1,42 @@
 <?php
-	
+
 	include 'cabecalho.php';
 ?>
-	<form method="post" action="gravarProfessor.php">
+<div class="coluna10">.</div>
+<article class="coluna80">
+	<form method="post" action="gravarProfessor.php" enctype="multipart/form-data">
 
-		<label for="siape">SIAPE</label>
-		<input type="text" name="siape">
+		<label for="siape" class="labels">SIAPE</label>
+		<input type="text" name="siape" class="inputs">
 
-		<label for="nome">Nome</label>
-		<input type="text" name="nome">
+		<br/>
 
-		<label for="email">Email</label>
-		<input type="text" name="email">
+		<label for="nome" class="labels">Nome</label>
+		<input type="text" name="nome" class="inputs">
 
-		<label for="foto">Foto (coloque a extensão)</label>
-		<input type="text" name="foto">
+		<br/>
 
-		<label for="materia">Matéria</label>
-		<input type="text" name="materia">
+		<label for="email" class="labels">Email</label>
+		<input type="text" name="email" class="inputs">
 
-		<input type="submit" name="gravar" value="Gravar">
+		<br/>
+
+		<label for="foto" class="labels">Foto</label>
+		<input type="file" name="foto" class="inputs">
+
+		<br/>
+
+		<label for="materia" class="labels">Matéria</label>
+		<input type="text" name="materia" class="inputs">
+
+		<br/>
+
+		<input type="submit" name="gravar" value="Gravar" class="submit">
 
 	</form>
+</article>
 <?php
-	
+
 	include 'rodape.php';
 
 ?>

@@ -15,11 +15,10 @@
 			}
 		}
 
-
-
-
 		return $usuario;
-	}	
+	}
+
+
 
 	function listaUsuarios(){
 		$usuarios = array();
@@ -35,14 +34,14 @@
 				$usuario['senha']=$colunas[2];
 				$usuario['tipo']=$colunas[3];
 
-				$usuarios[] = $usuario;	
+				$usuarios[] = $usuario;
 			}
-			
+
 		}
 
 		return $usuarios;
 	}
-	
+
 
 
 ?>

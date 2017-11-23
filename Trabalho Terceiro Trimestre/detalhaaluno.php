@@ -14,7 +14,7 @@
 		<section class="clicavel" id="img">
 			<img src=<?=$aluno['foto']?>>
 		</section>
-	
+
 		<div class="modal img escondido">
 			<div class="fechar">X</div>
 			<img src=<?=$aluno['foto']?>>
