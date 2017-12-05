@@ -10,7 +10,7 @@
 							<h2>Você foi deslogado</h2>
 						</div>
 					</article>
-					<meta http-equiv="refresh" content="2;url=index.php">
+					<meta http-equiv="refresh" content="1;url=index.php">
 <?php
     include 'rodape.php';
 

@@ -1,27 +1,29 @@
 <?php
 
-	function buscaUsuario($codigo){
-		$usuario = array();
+	function buscaUser($login,$senha){
+		$user = array();
 //abrir arquivo
 		$dados = file("dados/usuarios.csv");
 //percorrer
 		foreach ($dados as $linha) {
 			$colunas = explode(",", $linha);
-			if ($colunas[0]==$codigo) {
-				$usuario['cod']=$colunas[0];
-				$usuario['login']=$colunas[1];
-				$usuario['senha']=$colunas[2];
-				$usuario['tipo']=$colunas[3];
+			if ($colunas[2]==$login && $colunas[3]==$senha) {
+				$user['cod']=$colunas[0];
+				$user['nome']=$colunas[1];
+				$user['login']=$colunas[2];
+				$user['senha']=$colunas[3];
+				$user['tipo']=$colunas[4];
+				$user['foto']=$colunas[5];
 			}
 		}
 
-		return $usuario;
+		return $user;
 	}
 
+//print_r(buscaUser('admin'));
 
-
-	function listaUsuarios(){
-		$usuarios = array();
+	function listaUsers(){
+		$users = array();
 
 		//abrir arquivo
 		$dados = file("dados/usuarios.csv");
@@ -29,17 +31,19 @@
 		foreach ($dados as $posicao => $linha) {
 			if ($posicao!=0) {
 				$colunas = explode(",", $linha);
-				$usuario['cod']=$colunas[0];
-				$usuario['login']=$colunas[1];
-				$usuario['senha']=$colunas[2];
-				$usuario['tipo']=$colunas[3];
+				$user['cod']=$colunas[0];
+				$user['nome']=$colunas[1];
+				$user['login']=$colunas[2];
+				$user['senha']=$colunas[3];
+				$user['tipo']=$colunas[4];
+				$user['foto']=$colunas[5];
 
-				$usuarios[] = $usuario;
+				$users[] = $user;
 			}
 
 		}
 
-		return $usuarios;
+		return $users;
 	}
 
 

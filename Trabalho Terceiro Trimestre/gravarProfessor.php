@@ -28,12 +28,6 @@ error_reporting(E_ALL);*/
 
 
 
-
-
-
-
-
-
 	$dados= file("dados/professores.csv");
 	foreach ($dados as $linha) {
 		$colunas = explode(",", $linha);
@@ -67,4 +61,4 @@ error_reporting(E_ALL);*/
 
 	//esse meta embaixo e pra redirecionar
 ?>
-<meta http-equiv="refresh" content="4;URL=index.php">
+<meta http-equiv="refresh" content="2;URL=listaprofessores.php">

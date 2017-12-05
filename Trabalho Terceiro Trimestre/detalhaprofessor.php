@@ -16,8 +16,8 @@
 		</section>
 
 		<div class="modal img escondido">
-			<div class="fechar">X</div>
-			<img src=<?=$professor['foto']?>>
+			<div class="fechar"><img src='imagens/x.png'></div>
+			<img src=<?=$professor['foto']?> id="imgpessoa">
 		</div>
 
 		<section class="dados">

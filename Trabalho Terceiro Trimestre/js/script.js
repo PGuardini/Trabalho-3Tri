@@ -1,5 +1,6 @@
+// PRIMEIRAMENTE, DESCULPE POR ESSE TRABALHO RUIM QUERIA TER FEITO MAIS MAS ESTOU CANSADO DE MEXER NELE]
 $(document).ready(function(){
-
+//alert
 	$("#logo").click(function(){
 		alert("Bem Vindo a su Agenda de Tarefas 2017");
 	})
@@ -24,23 +25,22 @@ $(document).ready(function(){
 			$("."+id).slideToggle("slow");
 		})
 
-	/*$('.item.menu').click(function () {
-		var id;
-		id=$(this).attr('id');
-		$("."+id)toggleClass('ativo');
-	})*/
+//submenus
 
-
-
-
-	$(".item.menu").mouseenter(function(){
+	$(".item.menu").click(function(){
 				var id;
 				id = $(this).attr('id');
 				$("."+id).slideToggle("slow");
-	      $("."+id).mouseout(function () {
-	        $("."+id).slideUp("slow");
-	      })
-			})
 
+			})
+//REDES
+	//$("#redes").click(function () {
+	//	$(".redes").slideToggle("slow");
+	//})
+
+//pagina de perfil do usuario (so desce o perfil[coisa inutil])
+	$("#perfil").click(function () {
+		$(".perfil").fadeToggle("slow","swing");
+	})
 
 })
